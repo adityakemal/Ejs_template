@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- head here -->
+  <% include ../partials/head.ejs %>
+</head>
+
+<body>
+  <!-- header here -->
+  <% include ../partials/header.ejs %>
+
+  <!-- main here -->
+  <main>
+    <div class="jumbotron">
+      <h1>This is great</h1>
+      <h1>hallo
+        <%= data[0].nama %>
+      </h1>
+      <p>Welcome to templating using EJS</p>
+    </div>
+    <h2>loop here</h2>
+    <ul>
+      <% for(var i = 0; i < data[1].length; i++ ){  %>
+      <li>
+        <%= data[1][i] %>
+      </li>
+      <% } %>
+    </ul>
+  </main>
+
+  <!-- footer here -->
+  <% include ../partials/footer.ejs %>
+
+</body>
+
+</html>

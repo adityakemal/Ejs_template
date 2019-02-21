@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- head here -->
+  <% include ../partials/head.ejs %>
+</head>
+
+<body>
+  <!-- header here -->
+  <% include ../partials/header.ejs %>
+
+  <!-- main here -->
+  <main>
+
+    <h2>actualy For-Of loop is here </h2>
+    <ul>
+      <% for( tdata of arr ){  %>
+      <li>
+        <%= tdata.nama %> - <%= tdata.minuman %>
+      </li>
+      <% } %>
+    </ul>
+  </main>
+
+  <!-- footer here -->
+  <% include ../partials/footer.ejs %>
+
+</body>
+
+</html>
